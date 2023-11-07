@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slap A Cactus!</title>
+    <link rel="stylesheet" href="./src/styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Slap A Cactus!</h1>
+      <div class="score-item">
+        <p>Score: <span id="score">0</span></p>
+      </div>
+      <div class="click-start">
+        <h2>Click START to get slappin'!</h2>
+        <button id="start">START</button>
+      </div>
+    </header>
+    <main>
+    <div class="score-item">
+      <p><span id="timer">10</span> seconds left to do some more slappin</p>
+    </div>
+    <div class="grid">
+      <div id="hole0" class="hole">
+        <div id="mole0" class="mole"></div>
+      </div>
+      <div id="hole1" class="hole">
+        <div id="mole1" class="mole"></div>
+      </div>
+      <div id="hole2" class="hole">
+        <div id="mole2" class="mole"></div>
+      </div>
+      <div id="hole3" class="hole">
+        <div id="mole3" class="mole"></div>
+      </div>
+      <div id="hole4" class="hole">
+        <div id="mole4" class="mole"></div>
+      </div>
+      <div id="hole5" class="hole">
+        <div id="mole5" class="mole"></div>
+      </div>
+      <div id="hole6" class="hole">
+        <div id="mole6" class="mole"></div>
+      </div>
+      <div id="hole7" class="hole">
+        <div id="mole7" class="mole"></div>
+      </div>
+      <div id="hole8" class="hole">
+        <div id="mole8" class="mole"></div>
+      </div>
+    </div>
+    <section class="audios" hidden>
+      <audio src="./assets/molesong.mp3" id="song" loop></audio>
+      <audio src="./assets/hit.mp3" id="whackSound" ></audio>
+    </section>
+    </main>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
