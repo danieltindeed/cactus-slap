@@ -179,11 +179,6 @@ function updateTimer() {
   if (time > 0) {
     time -= 1;
     timerDisplay.textContent = time;
-    if (time <= Math.floor(duration / 2)) {
-      timerDisplay.classList.add("urgent");
-      song.pause();
-      song.currentTime = 0;
-    }
   }
   return time;
 }
