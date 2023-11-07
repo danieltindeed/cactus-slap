@@ -1,0 +1,94 @@
+html {
+  background: url('../assets/background.jpg') no-repeat center center fixed;
+  box-sizing: border-box;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index:0;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  font-size: 90px;
+  font-family: "Gill Sans", sans-serif;
+  color: yellow;
+  -webkit-text-stroke: 2px black;
+}
+
+h2 {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Gill Sans", sans-serif;
+  color: yellow;
+  -webkit-text-stroke: 1px black;
+}
+
+body {
+  cursor: url('./assets/slap-hand.png'), pointer;
+  /*cursor: url('./assets/mallet.png'), pointer;*/
+}
+
+#start {
+    text-align: center;
+    font-size: 30px;
+}
+
+.click-start {
+  text-align: center;
+}
+
+.score-item {
+  text-align: center;
+  font-size: 30px;
+}
+
+#timer{
+    color: red;
+}
+
+.grid {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  cursor: url('../assets/slap-hand.png'), pointer;
+  /*cursor: url('./assets/mallet.png'), pointer;*/
+}
+
+.hole {
+  flex: 1 0 33.33%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hole:after {
+  display: block;
+  background: url("../assets/hole.png") bottom center no-repeat;
+  background-size:contain;
+  content:'';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: -40%;
+  z-index: 2;
+  pointer-events:none;
+}
+
+.mole {
+  background:url('../assets/mole.png') bottom center no-repeat;
+  background-size: 40%;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  pointer-events:auto;
+}
+
+.hole.show .mole {
+  top: 0;
+  transform: scale(1.1);
+}
