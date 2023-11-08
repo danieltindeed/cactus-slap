@@ -26,7 +26,7 @@ h2 {
 }
 
 body {
-  cursor: url('../assets/slap-hand.png'), pointer;
+  cursor: url('../assets/slap-hand2.png'), pointer;
   /*cursor: url('../assets/mallet.png'), pointer;*/
 }
 
@@ -54,8 +54,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  cursor: url('../assets/slap-hand.png'), pointer;
-  /*cursor: url('./assets/mallet.png'), pointer;*/
+  cursor: url('../assets/slap-hand2.png'), pointer;
+  /*cursor: url('../assets/mallet.png'), pointer;*/
 }
 
 .hole {
