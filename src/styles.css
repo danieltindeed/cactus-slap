@@ -26,8 +26,8 @@ h2 {
 }
 
 body {
-  cursor: url('./assets/slap-hand.png'), pointer;
-  /*cursor: url('./assets/mallet.png'), pointer;*/
+  cursor: url('../assets/slap-hand.png'), pointer;
+  /*cursor: url('../assets/mallet.png'), pointer;*/
 }
 
 #start {
